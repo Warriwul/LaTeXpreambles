@@ -1,0 +1,20 @@
+% various formatting, colouring etc
+% requires \usepackage{soul}
+
+\definecolor{orange}{rgb}{1,0.5,0}
+\definecolor{lightred}{rgb}{1,0.75,0.75}
+\definecolor{violetred}{rgb}{1,0.5,0.8}
+\DeclareRobustCommand{\hiliyel}[1]{\sethlcolor{yellow}\hl{#1}}
+\DeclareRobustCommand{\hilicyan}[1]{\sethlcolor{cyan}\hl{#1}}
+\DeclareRobustCommand{\hiliblu}[1]{\sethlcolor{blue}\hl{#1}}
+\DeclareRobustCommand{\hilired}[1]{\sethlcolor{lightred}\hl{#1}}
+\DeclareRobustCommand{\hilivr}[1]{\sethlcolor{violetred}\hl{#1}}
+
+\AtBeginEnvironment{quote}{\vspace{-.25\baselineskip}}% Stuff before {quote}
+\AtEndEnvironment{quote}{\vspace{-.25\baselineskip}}% Stuff after {quote}
+\let\quoteOLD\quote%
+    \renewcommand*{\quote}{\quoteOLD\color{blue}}
+    
+    
+\setlength{\parindent}{0pc}  % no paragraph indent
+\setlength{\parskip}{1pc}    % line between each paragraph
