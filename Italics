@@ -1,0 +1,7 @@
+\newcommand*{\booktitle}[1]{\textit{#1}}     % italize booktitles, etc.
+\newcommand*{\journaltitle}[1]{\textit{#1}}
+\newcommand*{\vol}[1]{\textbf{#1}}           % bold volume number in refs
+
+\newcommand*{\latin}[1]{\textit{#1}}
+\newcommand*{\french}[1]{\textit{#1}}
+\newcommand*{\greek}[1]{\textit{#1}}
