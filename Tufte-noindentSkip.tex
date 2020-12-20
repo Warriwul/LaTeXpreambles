@@ -1,0 +1,20 @@
+%%% https://tex.stackexchange.com/questions/77999/remove-indent-of-paragraph-and-add-line-skip-with-tufte-latex
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{0pc}% was 1.0pc
+  \setlength{\JustifyingParindent}{0pc}% was 1.0pc
+  \setlength{\parindent}{0pc}% was 1pc
+  \setlength{\parskip}{1pc}% was 0pt
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pc}%  was 0.5pc
+  \setlength{\JustifyingParindent}{0pc}%  was 0.5pc
+  \setlength{\parindent}{0pc}% was 0.5pc
+  \setlength{\parskip}{1pc}% was 0pt
+}
+\makeatother
