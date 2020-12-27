@@ -17,7 +17,8 @@
 
 \AtBeginEnvironment{quote}{\vspace{-.25\baselineskip}}% Stuff before {quote}
 \AtEndEnvironment{quote}{\vspace{-.25\baselineskip}}% Stuff after {quote}
-\let\quoteOLD\quote%
+
+\let\quoteOLD\quote
     \renewcommand*{\quote}{\quoteOLD\color{blue}}
     
     
