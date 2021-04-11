@@ -1,15 +1,36 @@
-\newcommand*{\booktitle}[1]{\textit{#1}}     % italize booktitles, etc.
-\newcommand*{\book}[1]{\textit{#1}}          % shorten label
-\newcommand*{\journaltitle}[1]{\textit{#1}}
-\newcommand*{\journal}[1]{\textit{#1}}
-\newcommand*{\newspaper}[1]{\textit{#1}}
-\newcommand*{\vol}[1]{\textbf{#1}}           % bold volume number in refs
+\usepackage{soul}  % for highlighting etc
 
-\newcommand*{\latin}[1]{\textit{#1}}
-\newcommand*{\french}[1]{\textit{#1}}
-\newcommand*{\greek}[1]{\textit{#1}}
-\newcommand*{\german}[1]{\textit{#1}}
+\let\booktitle\textit
+\soulregister\booktitle{1}
+\let\book\textit
+\soulregister\book{1}
 
-\newcommand{\etal}{\textit{et\hairsp{}al.}\xspace}  % Only 'al' is followed by a period.  Latin: “et alia” 
+\let\journaltitle\textit
+\soulregister\journaltitle{1}
+\let\journal\textit
+\soulregister\journal{1}
+
+\let\newspaper\textit
+\soulregister\newspaper{1}
+
+\let\vol\textbf
+\soulregister\vol{1}  % bold volume number in refs
+
+\let\latin\textit
+\soulregister\latin{1}  
+\let\french\textit
+\soulregister\french{1}
+\let\greek\textit
+\soulregister\greek{1}
+\let\german\textit
+\soulregister\german{1}
+\let\italian\textit
+\soulregister\italian{1}
+
+
+\newcommand{\etal}{\textit{et\hairsp{}al.}\xspace}  % Only 'al' is followed by a period.  Latin: “et alia”
+\soulregister\etal{1}
 \newcommand{\ibid}{\textit{ibid.}\xspace}  % (ib-eyed) Latin: ibīdem, (ib-eye-dem) meaning “in the same place”
+\soulregister\ibid{1}
 \newcommand{\Ibid}{\textit{Ibid.}\xspace}  %
+\soulregister\Ibid{1}
