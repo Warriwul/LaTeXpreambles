@@ -1,7 +1,15 @@
 % various formatting, colouring etc
 % requires \usepackage{soul}
 
-\usepackage{soul}
+%\usepackage{soul}  % Instead, use xcolor below
+\usepackage{xcolor}
+
+\newcommand\hl[1]{%
+  \bgroup
+  \hskip0pt\color{red!80!black}%
+  #1%
+  \egroup
+}
 
 \definecolor{orange}{rgb}{1,0.5,0}
 \definecolor{lightred}{rgb}{1,0.8,0.8}
