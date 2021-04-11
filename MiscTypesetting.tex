@@ -4,12 +4,11 @@
 %\usepackage{soul}  % Instead, use xcolor below
 \usepackage{xcolor}
 
-\newcommand\hl[1]{%
-  \bgroup
-  \hskip0pt\color{red!80!black}%
-  #1%
-  \egroup
-}
+\usepackage{xcolor}
+\newcommand\hl[1]{\colorbox{yellow}{\textcolor{red}{#1}}}
+\newcommand\hlbreakable[1]{\textcolor{red}{#1}}
+\usepackage[most]{tcolorbox}
+\newtcolorbox{highlighted}{colback=yellow,coltext=red,breakable}
 
 \definecolor{orange}{rgb}{1,0.5,0}
 \definecolor{lightred}{rgb}{1,0.8,0.8}
