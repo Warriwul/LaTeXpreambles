@@ -37,7 +37,7 @@
 \soulregister\newspaper6
 \soulregister\newspaper7
 
-\let\vol\textbf  % bold volume number in refs
+\let\vol\textbf    % bold volume number in refs
 \soulregister\vol1
 \soulregister\vol4
 \soulregister\vol5
@@ -51,6 +51,12 @@
 \soulregister\latin6
 \soulregister\latin7 
 
+\let\binom\textit    % Binomial nomenclature
+\soulregister\binom1
+\soulregister\binom4
+\soulregister\binom5
+\soulregister\binom6
+\soulregister\binom7 
 
 \let\french\textit
 \soulregister\french1
@@ -107,9 +113,11 @@
 \soulregister\myuline7  % Can highlight and underline at same time
 
 
-%\newcommand{\etal}{\textit{et\hairsp{}al.}\xspace}  % Only 'al' is followed by a period.  Latin: “et alia”
-%\soulregister\etal
-%\newcommand{\ibid}{\textit{ibid.}\xspace}  % (ib-eyed) Latin: ibīdem, (ib-eye-dem) meaning “in the same place”
-%\soulregister\ibid{}
-%\newcommand{\Ibid}{\textit{Ibid.}\xspace}  %
-%\soulregister\Ibid{}
+\renewcommand{\etal}{\textit{et\hairsp{}al.}\xspace}  % Only 'al' is followed by a period.  Latin: “et alia”
+\soulregister\etal
+\newcommand{\ibid}{\textit{ibid.}\xspace}  % (ib-eyed) Latin: ibīdem, (ib-eye-dem) meaning “in the same place”
+\soulregister\ibid{}
+\newcommand{\Ibid}{\textit{Ibid.}\xspace}  %
+\soulregister\Ibid{}
+\newcommand{\etc}{etc. \xspace}  %
+\soulregister\etc{}
